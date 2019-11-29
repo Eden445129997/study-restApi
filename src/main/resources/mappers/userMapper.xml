@@ -8,6 +8,10 @@
         select * from user
     </select>
 
+    <select id="queryUserById" resultType="com.example.study.entity.UserEntity">
+        select * from user where id = #{id}
+    </select>
+
     <update id="updateUser" parameterType="com.example.study.entity.UserEntity">
         update user set uname = #{uname} where id = #{id}
     </update>

@@ -1,7 +1,15 @@
 package com.example.study.entity;
 
+
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiParam;
+
+@ApiModel
 public class UserEntity {
+
+    @ApiParam(value = "用户id",required = true)
     private Integer id;
+    @ApiParam(value = "用户姓名")
     private String uname;
 
     public Integer getId() {
